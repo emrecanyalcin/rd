@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <h2>CreatePushSubscription</h2>
+        <div class="col-md-8">
+            <form action="CreatePushSubscription.php" method="POST">
+                <input class="form-control" type="hidden" value="<?php echo $serviceTicket; ?>" name="serviceTicket">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">PushToken</label>
+                        <input type="text" class="form-control" name="push_token" placeholder="PushToken">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">MemberID</label>
+                        <input type="text" class="form-control" name="member_id" placeholder="MemberID">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Status</label>
+                        <input type="text" class="form-control" name="status" placeholder="Status">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">ForceUpdate</label>
+                        <select class="form-control" name="force_update">
+                            <option value="true">True</option>
+                            <option value="false">False</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">AppAlias</label>
+                        <input type="text" class="form-control" name="app_alias" placeholder="AppAlias">
+                    </div>
+                    <br>
+                    <div class="form-group col-md-6">
+                        <button class="btn btn-primary" type="submit">Test</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <h2>AddToWebLists</h2>
+        <div class="col-md-8">
+            <form action="AddToWebLists.php" method="POST">
+                <input class="form-control" type="hidden" value="<?php echo $serviceTicket; ?>" name="serviceTicket">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Key</label>
+                        <input type="text" class="form-control" name="key" placeholder="Key">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Value</label>
+                        <input type="text" class="form-control" name="value" placeholder="Value">
+                    </div>
+                    <br>
+                    <div class="form-group col-md-6">
+                        <button class="btn btn-primary" type="submit">Test</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
