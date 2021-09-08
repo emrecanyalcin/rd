@@ -1,6 +1,6 @@
 # rd
 Related Digital APIs
 
-cacert.pem dosyasını indirin. 
-php.ini dosyasında bulunan openssl.cafile kısmına dosyanın yolunu yazın.
-veritabanı için sql dosyasını kendi server ınıza import edin.
+1. cacert.pem dosyasını indirin. 
+2. php.ini dosyasında bulunan openssl.cafile kısmına dosyanın yolunu yazın.
+3. veritabanı için sql dosyasını kendi server ınıza import edin.
