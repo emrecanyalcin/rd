@@ -1,8 +1,6 @@
-
 <?php
-    include 'config.php';
 
-    
+    include 'config.php';
     $queryPostPushService = $db->prepare("SELECT * FROM post_push_service ORDER BY method ASC");
     $queryPostPushService->execute();
     $postPushServiceList = $queryPostPushService->fetchAll(PDO::FETCH_ASSOC);
@@ -38,6 +36,7 @@
     $queryDataWarehouseService = $db->prepare("SELECT * FROM data_warehouse_service ORDER BY method ASC");
     $queryDataWarehouseService->execute();
     $dataWarehouseServiceList = $queryDataWarehouseService->fetchAll(PDO::FETCH_ASSOC);
+    
 
     /*
     $queryserviceName = $db->prepare("SELECT * FROM service_names WHERE id=1");
@@ -189,7 +188,7 @@ $serviceTicket = $_SESSION['serviceTicket'];
             </div>
         </div>
     </section>
-    <!-- Campaign Service section-->
+    <!-- Member Service section-->
     <section class="bg-light" id="member_service">
     <div class="container px-4">
             <div class="row gx-4 justify-content-center">
@@ -481,7 +480,7 @@ $serviceTicket = $_SESSION['serviceTicket'];
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Emre Can Yalçın 2021</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->

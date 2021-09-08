@@ -1,7 +1,5 @@
 <?php
-
 session_start();
-
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -9,7 +7,6 @@ if($_POST){
     $_SESSION['username'] = $username;
     $_SESSION['password'] = $password;
     
-
     $urlLogin = "https://api.relateddigital.com/reste/api/auth/login";
 
     $loginArray = array(
@@ -17,18 +14,13 @@ if($_POST){
         'Password' => $password
     );
 
-
-
     $login = http_build_query($loginArray);
-
-
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, $urlLogin);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $login);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
     $response = curl_exec($ch);
 
     if ($error = curl_error($ch)) {
@@ -48,25 +40,9 @@ if($_POST){
             header('Location: dashboard.php');
         }else{
             header('Location: index.php');
-        }
-    
-    
-    
-
-
-   /* echo "<pre>";
-    print_r($decoded) ;
-    echo "</pre>";
-    */
-   // $serviceTicket = $decoded->ServiceTicket;
-    //print_r($serviceTicket);
-  //  var_dump($serviceTicket, $success);
-    
+        }   
     }
-
-
 }
-
 curl_close($ch);
 
 ?>
