@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "emrecan1996:";
+$password = "";
 $name = "related_digital_api";
 
 
